@@ -31,5 +31,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true  # Force actions to use Node 20
       run: |
         python twitter_bot.py
